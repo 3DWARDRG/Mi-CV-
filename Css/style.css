@@ -1,0 +1,68 @@
+*{
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    padding: 20px 15rem;
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer{
+    background-color: aqua;
+}
+
+header{
+    height: 15%;
+}
+
+main{
+    height: 60%;
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-forms{
+    background-color: black;
+    height: 20%;
+    width: 100%;
+}
+
+.experience{
+    background-color: blueviolet;
+    height: 20%;
+    width: 100%;
+}
+
+.education{
+    background-color: brown;
+    height: 35%;
+    width: 100%;
+}
+
+.idioms{
+    height: 25%;
+    width: 50%;
+    background-color: green;;
+}
+
+.skills{
+    height: 25%;
+    width: 50%;
+    background-color: pink;
+}
+
+footer{
+    height: 15%;
+}
