@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/style.css">
+    <!-- Enlace de nueva fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <title>Mi CV</title>
 </head>
 <body>
     <div class="content">
     <header>
-        <h1>Edward Andres Rodriguez Gonzalez</h1>
-        <p>Desarollador Web</p>
+        <h2>Edward Andres Rodriguez Gonzalez</h2>
+        <div class="box-image"><img class="image-profile" src="./images/distracted-girlfriend-meme-1024x576.jpg" alt="profile-photo"></div>
+        <h2 class="bold">Desarollador Web</h2>
         <p>Soy Keanu Reeves, un actor y músico que ha participado en películas como The Matrix, John Wick y Bill y Ted. 
             Me considero una persona introvertida, discreta y sensible. Me gusta disfrutar de los momentos del día a día 
             y evitar los conflictos. He tenido que superar muchas tragedias personales en mi vida, pero he aprendido a ser resiliente 
@@ -19,17 +24,19 @@
     </header>
     <main>
         <div class="contact-forms">
-            <p><span>Email:</span>Edwardr185@gmail.com<br><span>Direccion:</span>Zipaquira, Cundinamarca<br><span>Celular:</span>3125344494</p>
+            <p id="text-ubication"><span class="text-contact">Email:</span> Edwardr185@gmail.com</p>
+                <p id="text-ubication"><span class="text-contact">Direccion:</span> Zipaquira, Cundinamarca</p>
+                <p id="text-ubication"><span class="text-contact">Celular:</span> 3125344494</p>
         </div>
         <div class="experience">
             <fieldset>
                 <legend>Experiencia</legend>
                 <div class="box-30">
-                    <p>Mayo 2018-Actualmente</p>
+                    <p class="text-edition">Mayo 2018-Actualmente</p>
                 </div>
                 <div class="box-70">
                     <p>Programador PHP</p>
-                    <p><span>Bogota</span>, Cundinamarca</p>
+                    <p class="text-dif">Bogota, Cundinamarca</p>
                     <ul>
                         <li>Crear y probar aplicaciones para sitios web</li>
                         <li>Solucionar problemas del sitio web</li>
@@ -44,14 +51,14 @@
             <fieldset>
                 <legend>Educacion</legend>
                 <div class="box-30">
-                    <p>2010-2018</p>
-                    <p>Abril 2023-Oct 2023</p>
+                    <p class="text-r-m">2010-2018</p>
+                    <p class="text-r-m">Abril 2023-Oct 2023</p>
                 </div>
                 <div class="box-70">
                     <p>Bachiller Tecnico en Recursos Naturales</p>
-                    <p><span>I.E.R.D/ SENA</span>, Tocancipa</p>
+                    <p class="text-r-m-two">I.E.R.D/ SENA, Tocancipa</p>
                     <p>Desarollador Full Stack</p>
-                    <p><span>DevF</span>, Mexico</p>
+                    <p class="text-r-m-two">DevF, Mexico</p>
                 </div>
             </fieldset>
         </div>
@@ -59,12 +66,12 @@
             <fieldset>
                 <legend>Idiomas</legend>
                 <ul>
-                    <li>Español (Nativo)</li>
-                    <li>Ingles (Basico)</li>
-                    <p>Idiomas de Programacion</p>
+                    <li>Español <span id="text-bold">(Nativo)</span></li>
+                    <li>Ingles <span id="text-bold">(Basico)</span></li>
+                    <p class="text-idioms">Idiomas de Programacion</p>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>JS (REACT.JS , )</li>
+                    <li>JAVASCRIPT</li>
                     <li>C#</li>
                 </ul>
             </fieldset>
@@ -72,11 +79,11 @@
         <div class="skills">
             <fieldset>
                 <legend>Habilidades</legend>
-                <ul>
+                <ul class="skills">
                     <li>Trabajo en equipo, Responsabilidad Autonoma, Autodidacta</li>
-                    <li>Trabajar con Git y GitHub - control de versiones.</li>
-                    <li>Trabajo con JSON, REACT.JS, ASYN JS</li>
-                    <li>Manejo de base de datos (Postgre SQL, Rest API, NOSQL)</li>
+                    <li>Trabajar con <span id="text-bold">Git y GitHub</span> - control de versiones.</li>
+                    <li>Trabajo con <span id="text-bold">JSON, REACT.JS, ASYN JS</span></li>
+                    <li>Manejo de base de datos <span id="text-bold">(Postgre SQL, Rest API, NOSQL)</span></li>
                 </ul>
             </fieldset>
         </div>
@@ -85,9 +92,9 @@
         <fieldset>
             <legend>Certificaciones y Cursos</legend>
             <ul>
-                <li>Certificacion en Responsive Design-FreeCodeCamp.</li>
-                <li>Certificacion en Javascript, Avanzado.-FreeCodeCamp.</li>
-                <li>Certificacion en Manejo de Bases de datos.-FreeCodeCamp.</li>
+                <li>Certificacion en Responsive Design.<span id="text-bold">-FreeCodeCamp</span></li>
+                <li>Certificacion en Javascript, Avanzado.<span id="text-bold">-FreeCodeCamp</span></li>
+                <li>Certificacion en Manejo de Bases de datos.<span id="text-bold">-FreeCodeCamp</span></li>
             </ul>
         </fieldset>
     </footer>
