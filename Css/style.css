@@ -1,3 +1,5 @@
+
+/* Añadi una clase que aplicara sus propiedades de manera totalmente general */
 *{
     font-size: 16px;
     color: #2C5364;
@@ -5,14 +7,19 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* Estableci un margin de valor 0 para poder aplicar las propiedades 
+de manera sencilla sin valores por defecto  */
+
 p{
     margin: 0;
 }
 
+/* Inclui una variable para definir el color de los bordes de las cajas visibles */
 
 :root{
     --borde-color: #F8FFAE;
 }
+
 
 body{
     width: 100%;
@@ -21,6 +28,8 @@ body{
     background: linear-gradient(to right, #a8ff78, #78ffd6);
 }
 
+/* Estableci una caja para poder modificar los elementos dentro de manera sencilla */
+
 .content{
     width: 100%;
     height: 180vh;
@@ -28,6 +37,7 @@ body{
     flex-direction: column;
 }
 
+/* ELementos Header */
 
 header{
     height: 20%;
@@ -63,11 +73,15 @@ header h2{
     border-radius: 5%;
 }
 
-.bold{
+.second-text-profile{
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 900;
 }
+
+/* Final de elementos Header */
+
+/* Elementos de Main */
 
 main{
     height: 65%;
@@ -90,24 +104,14 @@ main{
     border-bottom: solid 2px var(--borde-color);
 }
 
-.text-contact{
+.text-edition{
     font-weight: 900;
-    font-size: 18px;
 }
 
 .experience{
     height: 25%;
     width: 100%;
     margin-bottom: 2.5%;
-}
-
-.text-edition{
-    font-weight: 900;
-}
-
-.text-dif{
-    margin-bottom: 5px;
-    font-weight: 900;
 }
 
 fieldset{
@@ -126,11 +130,10 @@ legend{
     text-shadow: 0.1em 0.1em 0.05em #2C5364;
 }
 
-ul{
-    margin: 0;
-    padding-inline-start: 20px;
+.text-dif{
+    margin-bottom: 5px;
+    font-weight: 900;
 }
-
 
 .box-30{
     width: 30%;
@@ -142,12 +145,19 @@ ul{
     height: 90%;
 }
 
+ul{
+    margin: 0;
+    padding-inline-start: 20px;
+}
+
 
 .education{
     height: 21.2%;
     width: 100%;
     margin-bottom: 2.5%;
 }
+
+/* Dos clases de texto para colocarlos a la misma altura */
 
 .text-r-m{
     font-weight: 900;
@@ -159,6 +169,8 @@ ul{
     margin-bottom: 12px;
 }
 
+
+
 .idioms{
     height: 30%;
     width: 40%;
@@ -166,9 +178,6 @@ ul{
     margin-right: 1.5%;
 }
 
-#text-bold{
-    font-weight: 900;
-}
 
 .text-idioms{
     font-weight: 900;
@@ -181,6 +190,9 @@ ul{
     margin-bottom: 2.5%;
 }
 
+/* Fin de elementos de Main */
+
 footer{
     height: 12%;
 }
+
